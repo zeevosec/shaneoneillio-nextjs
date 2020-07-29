@@ -11,11 +11,11 @@ export default {
     },
     {
       label: "About",
-      path: "/about/",
+      path: "/about",
     },
     {
       label: "Projects",
-      path: "/projects/",
+      path: "/projects",
     },
     {
       label: "Github",

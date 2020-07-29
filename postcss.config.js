@@ -1,7 +1,3 @@
-const lost = require("lost");
-const pxtorem = require("postcss-pxtorem");
-
-console.log(lost());
 module.exports = {
   plugins: [
     "lost",

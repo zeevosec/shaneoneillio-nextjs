@@ -1,8 +1,8 @@
 ---
-title: 'My Projects and Other Ventures'
+path: "projects"
+title: "My Projects and Other Ventures"
 layout: page
-path: '/projects'
-date: '2019-08-31T16:51:00.000Z'
+date: "2019-08-31T16:51:00.000Z"
 ---
 
 <div class="row">

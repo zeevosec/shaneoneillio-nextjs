@@ -1,8 +1,8 @@
 ---
-title: 'About'
+path: "about"
+title: "About"
 layout: page
-path: '/about'
-description: 'I am a Software Engineer making things and breaking things. I also like lizards and rock climbing.'
+description: "I am a Software Engineer making things and breaking things. I also like lizards and rock climbing."
 ---
 
 ### I am from <i class="fa fa-arrow-right"></i> Delaware

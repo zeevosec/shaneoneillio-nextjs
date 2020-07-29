@@ -1,15 +1,20 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import clsx from "clsx";
 
 const isExternal = (path) => path.startsWith("http");
 
 const Menu = (props) => {
   const { data } = props;
 
+  const router = useRouter();
+
   const menuBlock = (
     <ul className="menu__list">
       {data.map((item) => {
         let link;
+        console.log(item.path);
         if (isExternal(item.path)) {
           link = (
             <a
@@ -25,8 +30,12 @@ const Menu = (props) => {
           link = (
             <Link href={item.path}>
               <a
-                className="menu__list-item-link"
-                activeClassName="menu__list-item-link menu__list-item-link--active"
+                className={clsx(
+                  "menu__list-item-link",
+                  router.asPath === item.path
+                    ? "menu__list-item-link--active"
+                    : false
+                )}
               >
                 {item.label}
               </a>
