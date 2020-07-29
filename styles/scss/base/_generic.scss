@@ -1,0 +1,300 @@
+/** 
+ * Generic
+ */
+
+html {
+  font-size: $typographic-root-font-size;
+}
+
+body {
+  font-family: $typographic-font-family;
+  color: $typographic-base-font-color;
+  line-height: $typographic-base-line-height;
+  font-size: $typographic-base-font-size;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $typographic-font-family;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: $typographic-base-font-size * 2.5;
+  @include line-height(2);
+  @include margin-top(4);
+  @include margin-bottom(1);
+}
+
+h2 {
+  font-size: $typographic-base-font-size * 1.6875;
+  @include line-height(1.5);
+  @include margin-top(2);
+  @include margin-bottom(0.5);
+}
+
+h3 {
+  font-size: $typographic-base-font-size * 1.375;
+  @include line-height(1);
+  @include margin-top(2);
+  @include margin-bottom(0.5);
+}
+
+h4 {
+  font-size: $typographic-base-font-size * 1.2;
+  @include line-height(1);
+  @include margin-top(1.5);
+  @include margin-bottom(0.5);
+}
+
+h5 {
+  font-size: $typographic-base-font-size;
+  @include line-height(1);
+  @include margin-top(2.5);
+  @include margin-bottom(0.5);
+}
+
+h6 {
+  font-size: $typographic-base-font-size;
+  @include line-height(1);
+  @include margin-top(2.5);
+  @include margin-bottom(0.5);
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  display: block;
+  margin: inherit auto;
+  box-shadow: none !important;
+}
+
+hr {
+  margin-top: 52px;
+  margin-bottom: 52px;
+  border: 0;
+  color: $color-base;
+  display: block;
+  height: 26px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: 100% 26px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 1px,
+    transparent 11px,
+    $color-base 11px,
+    $color-base 15px,
+    transparent 15px,
+    transparent 26px
+  );
+  width: 100px;
+}
+
+a {
+  color: $typographic-link-p-font-color;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $typographic-link-s-font-color;
+  }
+}
+
+a > svg {
+  fill: white;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+ul {
+  list-style: square;
+  @include margin-bottom(1);
+  & li {
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+}
+
+p {
+  @include line-height(1);
+  @include margin-bottom(1);
+}
+
+blockquote {
+  padding: 0;
+  font-style: italic;
+  text-align: center;
+}
+
+figure {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  @include line-height(0.75);
+  @include margin-top(0.25);
+  color: $color-base;
+  font-size: $typographic-small-font-size;
+  font-style: italic;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.layout {
+  lost-center: $layout-width;
+}
+
+.content {
+  &__inner {
+    padding: 25px 20px;
+  }
+}
+
+@include breakpoint-sm {
+  figure.float-left,
+  figure.float-right {
+    max-width: 310px;
+    @include padding(0, 1, 0, 1);
+  }
+  .float-right {
+    float: right;
+  }
+  .float-left {
+    float: left;
+  }
+  .content {
+    lost-column: 7/12;
+    &__inner {
+      padding: 30px 20px;
+    }
+  }
+}
+
+@include breakpoint-md {
+  .content {
+    lost-column: 2/3;
+    &__inner {
+      padding: 40px 35px;
+    }
+  }
+}
+
+.bg-blue {
+  background-color: rgb(204, 230, 255) !important;
+  text-decoration: none;
+}
+
+.bg-yellow {
+  background-color: rgb(248, 248, 171) !important;
+  text-decoration: none;
+}
+
+.bg-green {
+  background-color: rgb(153, 255, 153) !important;
+  text-decoration: none;
+}
+
+.no-underline {
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  border-radius: 2px;
+}
+
+.card {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.white-text {
+  color: #fff;
+}
+
+.black-text {
+  color: #333333 !important;
+}
+
+.card .card-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.card .card-content .card-title {
+  display: block;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.card .card-content {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-action:last-child {
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-action {
+  background-color: inherit;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  position: relative;
+  padding: 16px 24px;
+}
+
+.darken-1 {
+  background-color: #546e7a !important;
+}
+
+.purple-1 {
+  background-color: #6f4185 !important;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #fff;
+  margin-right: 24px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.sepia {
+  background-color: #c8cb77 !important;
+}
+
+.redish {
+  background-color: #7a545b !important;
+}
+
+.purple {
+  background-color: #7a546e !important;
+}
+
+.tealish {
+  background-color: #547a73 !important;
+}
