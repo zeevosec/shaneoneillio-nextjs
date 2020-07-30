@@ -29,6 +29,10 @@ h6 {
   font-weight: 500;
 }
 
+.aoffset {
+  fill: white;
+}
+
 h1 {
   font-size: $typographic-base-font-size * 2.5;
   @include line-height(2);
