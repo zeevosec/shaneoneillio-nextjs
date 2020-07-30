@@ -29,6 +29,14 @@ h6 {
   font-weight: 500;
 }
 
+h3:hover .anchor svg {
+  visibility: visible;
+}
+
+h3 .anchor svg {
+  visibility: hidden;
+}
+
 .anchor.before {
   position: absolute;
   top: 0;
