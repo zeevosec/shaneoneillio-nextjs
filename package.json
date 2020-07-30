@@ -10,6 +10,7 @@
   "dependencies": {
     "clsx": "^1.1.1",
     "gray-matter": "^4.0.2",
+    "hastscript": "^6.0.0",
     "lost": "^8.3.1",
     "moment": "^2.27.0",
     "next": "9.5.0",
@@ -17,7 +18,15 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remark": "^12.0.1",
+    "remark-asset-copy": "0.0.1",
+    "remark-autolink-headings": "^6.0.1",
+    "remark-frontmatter": "^2.0.0",
     "remark-html": "^12.0.0",
-    "sass": "^1.26.10"
+    "remark-parse": "^8.0.3",
+    "remark-slug": "^6.0.0",
+    "sass": "^1.26.10",
+    "to-vfile": "^6.1.0",
+    "unified": "^9.1.0",
+    "vfile": "^4.1.1"
   }
 }

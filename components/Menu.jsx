@@ -14,7 +14,6 @@ const Menu = (props) => {
     <ul className="menu__list">
       {data.map((item) => {
         let link;
-        console.log(item.path);
         if (isExternal(item.path)) {
           link = (
             <a

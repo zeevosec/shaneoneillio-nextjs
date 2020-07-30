@@ -1,7 +1,7 @@
 export default {
   url: "https://www.shaneoneill.io",
   title: "Zeevo | shaneoneill.io",
-  subtitle: "Hack the planet.",
+  subtitle: "aka Zeevo.",
   copyright: "© All rights reserved.",
   profilePic: "./src/pages/photo.jpg",
   menu: [

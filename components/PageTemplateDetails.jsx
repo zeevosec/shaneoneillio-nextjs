@@ -1,27 +1,25 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 
-class PageTemplateDetails extends React.Component {
-  render() {
-    const siteMetadata = this.props.siteMetadata;
+function PageTemplateDetails(props) {
+  const { siteMetadata, pageData } = props;
 
-    return (
-      <div>
-        <Sidebar {...siteMetadata} />
-        {/* <div className="content">
-          <div className="content__inner">
-            <div className="page">
-              <h1 className="page__title">{page.frontmatter.title}</h1>
-              <div
-                className="page__body"
-                dangerouslySetInnerHTML={{ __html: page.html }}
-              />
-            </div>
+  return (
+    <div>
+      <Sidebar {...siteMetadata} />
+      <div className="content">
+        <div className="content__inner">
+          <div className="page">
+            <h1 className="page__title">{pageData.title}</h1>
+            <div
+              className="page__body"
+              dangerouslySetInnerHTML={{ __html: pageData.html }}
+            />
           </div>
-        </div> */}
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default PageTemplateDetails;

@@ -3,6 +3,7 @@ path: "projects"
 title: "My Projects and Other Ventures"
 layout: page
 date: "2019-08-31T16:51:00.000Z"
+description: "I am a Software Engineer making things and breaking things."
 ---
 
 <div class="row">
