@@ -29,11 +29,17 @@ h6 {
   font-weight: 500;
 }
 
-h3:hover .anchor svg {
+h2:hover .anchor svg,
+h3:hover .anchor svg,
+h4:hover .anchor svg,
+h5:hover .anchor svg {
   visibility: visible;
 }
 
-h3 .anchor svg {
+h2 .anchor svg,
+h3 .anchor svg,
+h4 .anchor svg,
+h5 .anchor svg {
   visibility: hidden;
 }
 
